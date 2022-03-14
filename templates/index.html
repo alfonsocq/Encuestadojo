@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <form action="/success" method="POST">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" >          
+        </div>
+        <div>
+          <label for="locacion">Locación Dojo</label>
+          <select name="locacion" id="locacion">            
+            <option value="Lima">Lima</option>
+            <option value="Santiago">Santiago</option>
+            <option value="Ciudad de Mexico">Ciudad de Mexico</option>
+          </select>
+        </div>
+        <div>
+          <label for="favorito">Lenguaje Favorito</label>
+          <select name="favorito" id="favorito" >            
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="C+">C+</option>
+          </select>
+        </div>
+        <div>
+            <label for="comentarios" >Comentarios</label>
+            <textarea name="comentarios" id="comentarios" rows="3"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    
+</body>
+</html>
